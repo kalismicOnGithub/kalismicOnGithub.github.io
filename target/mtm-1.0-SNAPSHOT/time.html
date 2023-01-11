@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            const options = {
+                    method: 'GET',
+                    headers: {
+                            'X-RapidAPI-Key': '4ae3c31d17mshd396a1e4f7b139ep122749jsn52e9acc3572e',
+                            'X-RapidAPI-Host': 'world-clock.p.rapidapi.com'
+                    }
+            };
+
+            fetch('https://world-clock.p.rapidapi.com/json/west/now', options)
+                    .then(response => response.json())
+                    .then(response => console.log(response))
+                    .catch(err => console.error(err));
+        </script>
+    </body>
+</html>
